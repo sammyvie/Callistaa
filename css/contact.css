@@ -1,0 +1,532 @@
+/*
+    Name: Gonzales, Samantha Wayne D.
+    Section: WD-202
+    Date: October 18, 2024
+
+    */
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 180vh; 
+    background-image: linear-gradient(to bottom,
+        hsl(347deg 47% 54%) 0%,
+        hsl(347deg 53% 64%) 12%,
+        hsl(346deg 62% 74%) 22%,
+        hsl(344deg 80% 84%) 32%,
+        hsl(354deg 100% 90%) 43%,
+        hsl(15deg 100% 90%) 54%,
+        hsl(29deg 100% 92%) 68%,
+        hsl(46deg 86% 94%) 94%
+    );
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+root{
+    --text-pink: #C1536B;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+
+}
+
+nav ul {
+    list-style: none;        
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+  
+nav ul li {
+    margin-right: 20px;       
+}
+  
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;      
+    background-color: #fbbfcf; 
+    color: #841233;          
+    text-decoration: none;  
+    font-weight: bold;       
+    font-family: "Halant", sans-serif;
+    transition: background-color 0.3s ease;  
+    font-size: 15px;
+    margin-top: 22px;
+
+}
+  
+nav ul li a:hover {
+    background-color: #841233;
+    box-shadow: 10px 4px 12px 4px #fbbfcf;
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+nav ul li a:hover{
+    color: #FDF7E4;
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+#logo {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#mainlogo {
+    display: flex;         
+    justify-content: center; 
+}
+
+#mainlogo img {
+    width: 540px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 75px; 
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: high-quality;
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; 
+    padding-top: 10px; 
+}
+
+.preview img {
+    display: block;          
+    margin: 0 auto;
+    display: block;
+    border: 12px solid #C1536B;
+    box-shadow: 9px 5px 29px 8px #FDF7E4;
+
+}
+h3 {
+    font-family:'calistoga-regular',serif;
+    font-style: italic;
+    font-weight: 900;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 85px;
+    margin-bottom: 200px;
+    color: #C1536B;
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    padding: 1rem;
+    margin-top: 150px;
+    margin-bottom: 100px; 
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.arts img {
+    width: 380px;
+    height: 350px;
+}
+
+.title {
+    font-family: 'Calistoga', serif;
+    font-size: 23px;
+    text-align: center;
+    color: #C1536B;
+    
+}
+
+.arts h3 {
+    font-family: 'Calistoga', serif;
+    font-size: 23px;
+    text-align: center;
+    color: #FDF7E4; 
+    background-color: #841233; 
+    font-weight: bold;
+    padding: 20px 0; 
+    margin: 0;  
+}
+
+.arts a {
+    text-decoration: none;
+    color: #FDF7E4;
+
+}
+.arts h3 a:hover{
+    text-decoration: none;
+    color: #841233;
+    text-transform: var(--text-pink);
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.arts img:hover{
+    background-color: #841233;
+    box-shadow: 10px 4px 12px 4px #FDF7E4;
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.arts h3:hover {
+    background-color: #C1536B;
+    box-shadow: 10px 4px 12px 4px#FDF7E4;
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+footer {
+    background-color: #fbbfcf; 
+    padding: 10px 0; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 150px;
+}
+
+footer a { 
+    font-weight: bold;
+    font-family: "Halant", sans-serif;
+    font-size: 18px; 
+    color: #C1536B; 
+    margin: 0;
+}
+
+footer a:hover{
+    color: #841233;
+    box-shadow: 10px 4px 12px 4px #fbbfcf;
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.mobile-nav {
+    display: none;
+}
+
+
+#heading {
+    display: flex;                
+    justify-content: center;        
+    align-items: center;   
+    margin-top: 35px;        
+}
+
+#heading h1 {
+    font-family: "Calistoga", serif;
+    font-style: normal;
+    font-size: 60px; 
+    text-align: center; 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #841233;
+    background: linear-gradient(to bottom, #FDF7E4 0%, #C1536B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;  
+    color: transparent;             
+    display: inline-block;          
+}
+
+/* FORM STYLING */
+.form-container {
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 75px;
+    background-color: #C1536B;
+    font-family: "Halant", sans-serif;
+   
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FDF7E4;
+    margin-right: 25px;
+    margin-left: 25px;}
+
+.checkbox-group {
+    margin-top: 10px;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px;
+    color: #D14D72;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+button:hover {
+    background-color: #fbbfcf;
+    color: #FDF7E4;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    background-color: #FDF7E4;
+    color: black; 
+    border: 2px solid #D14D72; 
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    background-color: #FFF3F0; 
+    border-color: #C1536B; 
+    outline: none; 
+}
+
+/* HAMBURGER BAR NAV*/
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav menu (links) */
+.nav-menu {
+    align-items: center;
+    flex-direction: column; 
+    background-color: #fbbfcf;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: block; 
+    cursor: pointer;
+    margin-left: 42%; 
+    position: absolute;
+    justify-content: right;
+    z-index: 1000;
+
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #C1536B;
+}
+
+.nav-bar{
+    display: none;
+}
+
+/* <====== MOBILE QUERIES =======> */
+@media (max-width: 600px) {
+    .nav-bar {
+        min-height: 70px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+    }
+    
+    #logom {
+        margin-top: 20px;
+        margin-left: 0; 
+        flex-grow: 1; 
+    }
+
+    .desktop-tab {
+        display: none; 
+    }
+    
+    .desktop-tablet {
+        display: none;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .form-container {
+        width: 80%; 
+        margin: 0 auto;
+        padding: 20px;         
+    }
+    form {
+        width: 80%; 
+    }
+    .input-group {
+        margin-left: 10px;
+    }
+
+    label {
+        font-size: 14px; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    textarea {
+        width: 100%;  
+        font-size: 14px;  
+        padding: 8px;  
+        margin-bottom: 15px; 
+    }
+
+    .checkbox-group {
+        margin-bottom: 15px;
+    }
+
+    button {
+        text-align: center;
+        width: 50%; 
+        padding: 12px;  
+        font-size: 16px;  
+    }
+
+    #mainlogo img {
+        width: 100%; 
+        height: auto; 
+        max-width: 200px;
+    }
+
+    header {
+        flex-direction: column; 
+        padding-bottom: 10px; 
+    }
+
+    footer{
+        display: none;
+    }
+}
+
+
+/* <====== TABLET QUERIES =======> */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .nav-menu {
+        display: fixed; 
+        flex-direction: row; 
+    }
+
+    #heading {
+        display: flex;                
+        justify-content: center;        
+        align-items: center;   
+    }
+   
+    #logo {
+        margin-top: 10px;
+        margin-right: 250px;
+        text-align: left;
+    }
+    #mainlogo {
+        text-align: center;
+        margin: 0 auto; 
+    }
+
+    #mainlogo img {
+        width: 90%; 
+        height: auto;
+        max-width: 400px; 
+        max-height: 400px; 
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
+    header {
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        padding-bottom: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: right;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 11px; 
+        padding: 8px 15px;
+        margin-top: 15px;
+    }
+
+    #nopre {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 1.5rem; 
+        margin: 50px 30px; 
+
+    }
+
+    .Grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 1.5rem; 
+        justify-items: center;
+        margin: 50px 30px; 
+    }
+
+    .arts img {
+        width: 100%; 
+        height: auto;
+        max-width: 250px; }
+        
+     .form-container {
+        width: 80%;  
+        margin: 0 auto;
+        padding: 40px;         
+    }
+
+    form {
+        width: 90%; 
+    }
+    footer {
+        display: none;
+    }
+}

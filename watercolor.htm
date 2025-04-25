@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+    Full Name: Gonzales, Samantha Wayne D.
+    Section: WD-202
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callista</title> 
+
+    <link rel="stylesheet" href="./css/water_styles.css"> 
+
+    <link rel="shortcut icon" href="./img/icon.png">
+    <link rel="icon" type="image/png" sizes="45x45" href="./img/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icon.png">
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>  
+        <a href="./index.htm" id="logom">
+            <img src="./img/mainlogo.png" id="logo" width="80" height="50" alt="Logo">
+        </a>
+        
+        <!--Mobile View--><div id="Menu-icon">
+        <nav class = "nav-bar" >
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./portfolio.htm" class="menu-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./price.htm" class="menu-link">Price Range</a>
+                </li>   
+                <li class="nav-item">
+                    <a href="./contacts.htm" class="menu-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.htm" class="menu-link">About</a>
+                </li>     
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+    
+            </div> 
+        </div> 
+        </nav>
+    
+    
+      
+    
+        <div > 
+            <nav>
+                <ul class="desktop-tab" >
+                    <li><a href="./portfolio.htm">Portfolio</a></li>
+                    <li><a href="./price.htm">Price Range</a></li>
+                    <li><a href="./contacts.htm">Contact/Form's</a></li>
+                    <li><a href="./about.htm">About</a></li>
+                </ul>
+            </nav>
+    </div>
+    </header>
+
+    <section id="heading">
+        <h1>Watercolor Art</h1>
+    </section>
+    <section>
+        <section class="Grid__linewater">
+            <div class="Viewing__water">
+                <a href="#watercolorModal1">
+                    <img src="./Watercolor/pic1.png" alt="Watercolor Art 1">
+                </a>
+            </div>
+            <div class="Viewing__water">
+                <a href="#watercolorModal2">
+                    <img src="./Watercolor/pic2.png" alt="Watercolor Art 2">
+                </a>
+            </div>
+            <div class="Viewing__water">
+                <a href="#watercolorModal3">
+                    <img src="./Watercolor/pic3.png" alt="Watercolor Art 3">
+                </a>
+            </div>
+            <div class="Viewing__Port">
+                <a href="#watercolorModal4">
+                    <img src="./Watercolor/pic4.png" alt="Watercolor Art 4">
+                </a>
+            </div>
+            <div class="Viewing__Port2">
+                <a href="#watercolorModal4"> <!-- Assuming this was meant to be pic5 -->
+                    <img src="./Watercolor/pic4.png" alt="Watercolor Art 4">
+                </a>
+            </div>
+        </section>
+        
+        <section class="nopic">
+            <section class="Grid__linewater1">
+                <div class="Viewing__water1">
+                    <a href="#watercolorModal1">
+                        <img src="./Watercolor/pic1.png" alt="Watercolor Art 1">
+                    </a>
+                </div>
+                <div class="Viewing__water1">
+                    <a href="#watercolorModal2">
+                        <img src="./Watercolor/pic2.png" alt="Watercolor Art 2">
+                    </a>
+                </div>
+                <div class="Viewing__water1">
+                    <a href="#watercolorModal3">
+                        <img src="./Watercolor/pic3.png" alt="Watercolor Art 3">
+                    </a>
+                </div>
+            </section>
+        </section>
+        
+        <!-- CSS Modal Structure -->
+        <div id="watercolorModal1" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close">&times;</a>
+                <img src="./Watercolor/pic1.png" alt="Watercolor Art 1">
+            </div>
+        </div>
+        <div id="watercolorModal2" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close">&times;</a>
+                <img src="./Watercolor/pic2.png" alt="Watercolor Art 2">
+            </div>
+        </div>
+        <div id="watercolorModal3" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close">&times;</a>
+                <img src="./Watercolor/pic3.png" alt="Watercolor Art 3">
+            </div>
+        </div>
+        <div id="watercolorModal4" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close">&times;</a>
+                <img src="./Watercolor/pic4.png" alt="Watercolor Art 4">
+            </div>
+        </div>
+        
+       
+       
+        <!-- Modal for displaying the larger image -->
+        <div id="imageModal" class="modal" onclick="closeModal();">
+            <span class="close">&times;</span>
+            <img class="modal-content1" id="modalImage">
+        </div>
+     </section> 
+     <div class="button-container">
+                <a href="./portfolio.htm" class="back-button">Back to Portfolio</a>
+    </div>
+    
+     <div class="button-container2">
+            <a href="./portfolio.htm" class="back-button">Back to Portfolio</a>
+        </div> 
+    <script src="./js/script.js"></script>
+
+    <footer>
+        <a href="https://www.facebook.com/profile.php?id=61550916352479&mibextid=LQQJ4d">Facebook</a>
+        <a href="https://www.instagram.com/jazzpotato_artzz/profilecard">Instagram</a>
+        <a href="https://www.tiktok.com/@jazzpotato_artz?lang=en&is_from_webapp=1&sender_device=mobile&sender_web_id=7426263564505646600">Tik-Tok</a>
+        <a href="mailto:caizelgonzales@gmail.com">Email</a>
+    </footer>    
+</body>
+</html>

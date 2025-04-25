@@ -1,0 +1,526 @@
+/*
+    Name: Gonzales, Samantha Wayne D.
+    Section: WD-202
+    Date: October 18, 2024
+
+    */
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 120vh; 
+    background-image: linear-gradient(to bottom,
+        hsl(347deg 47% 54%) 0%,
+        hsl(347deg 53% 64%) 12%,
+        hsl(346deg 62% 74%) 22%,
+        hsl(344deg 80% 84%) 32%,
+        hsl(354deg 100% 90%) 43%,
+        hsl(15deg 100% 90%) 54%,
+        hsl(29deg 100% 92%) 68%,
+        hsl(46deg 86% 94%) 94%
+    );
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+root{
+    --text-pink: #C1536B;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+
+}
+
+nav ul {
+    list-style: none;        
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+  
+nav ul li {
+    margin-right: 20px;       
+}
+  
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;      
+    background-color: #fbbfcf; 
+    color: #841233;          
+    text-decoration: none;  
+    font-weight: bold;       
+    font-family: "Halant", sans-serif;
+    transition: background-color 0.3s ease;  
+    font-size: 15px;
+    margin-top: 22px;
+
+}
+  
+nav ul li a:hover {
+    background-color: #841233;
+    box-shadow: 10px 4px 12px 4px #fbbfcf;
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+nav ul li a:hover{
+    color: #FDF7E4;
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+#heading {
+    display: flex;                
+    justify-content: center;        
+    align-items: center;   
+    margin-top: 35px;        
+}
+
+#heading h1 {
+    font-family: "Calistoga", serif;
+    font-style: normal;
+    font-size: 85px; 
+    text-align: center; 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #841233;
+    background: linear-gradient(to bottom, #FDF7E4 0%, #C1536B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;  
+    color: transparent;             
+    display: inline-block;          
+}
+
+caption {
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    margin-left: 15%;
+    margin-bottom: 15px;
+    max-width: 600px; 
+    line-height: 1.5; 
+    font-family: "Halant", sans-serif;
+    font-weight:bold;
+    color: #841233;
+}
+
+/*TABLE SETTING DESIGN*/
+main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+table {
+    table-layout: fixed;
+    width: 65%;
+    border-collapse: collapse;
+    background-color: #C1536B;
+    color: #FDF7E4;
+}
+
+tr {
+    padding-left: 15px;
+    padding: 50px 50px;
+    font-family: "Halant", sans-serif;
+}
+
+th {
+    background-color: #841233;
+}
+td {
+    background-color: #C1536B;
+}
+
+th, td {
+    border: 2.5px solid #841233;
+    padding: 8px;
+    text-align: center;
+    width: 33.33%;
+}
+
+td:hover {
+    background-color: #841233;
+    box-shadow: 10px 4px 12px 4px #fbbfcf;
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+th td:hover{
+    color: #FDF7E4;
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+footer {
+    background-color: #fbbfcf; 
+    padding: 10px 0; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 150px;
+}
+
+footer a { 
+    font-weight: bold;
+    font-family: "Halant", sans-serif;
+    font-size: 18px; 
+    color: #C1536B; 
+    margin: 0;
+}
+
+footer a:hover{
+    color: #841233;
+    box-shadow: 10px 4px 12px 4px #fbbfcf;
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+/* HAMBURGER BAR NAV*/
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Nav menu (links) */
+.nav-menu {
+    align-items: center;
+    background-color: #fbbfcf;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: block; 
+    cursor: pointer;
+    margin-left: 42%; 
+    position: absolute;
+    justify-content: right;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #C1536B;
+}
+
+.nav-bar{
+    display:none;}
+
+/* <====== MOBILE QUERIES =======> */
+@media (max-width: 600px) {
+ /* HAMBURGER */
+    .nav-bar {
+        min-height: 70px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+    }
+    #logom {
+        margin-top: 40px;
+        margin-left: 0; 
+        flex-grow: 1; 
+    }
+
+    .desktop-tab {
+    display: none; 
+}
+    .desktop-tablet {
+        display: none;
+    }
+    .hamburger {
+        display: block; 
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    #heading {
+        display: flexbox;                
+        justify-content: center;        
+        align-items: center;   
+        margin-top: 35px;        
+    }
+
+    #heading h1 {
+        font-family: "Calistoga", serif;
+        font-style: normal;
+        font-size: 90px; 
+        text-align: center; 
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #841233;
+        background: linear-gradient(to bottom, #FDF7E4 0%, #C1536B 100%);
+        background-clip: text;
+        -webkit-background-clip: text;  
+        color: transparent;             
+        display: inline-block;          
+    }
+    .content {
+        display: flexbox;
+        flex-direction: column; 
+        align-items: center;  
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 35px;
+        margin-bottom: 65px;
+    }
+
+    .content img {
+        width: 200%; 
+        max-width: 300px;
+        height: auto;
+        display: block;
+        margin-bottom: 20px; 
+        box-shadow: 9px 5px 20px 8px #fbbfcf;
+    }
+
+    #dep {
+        text-align: center; 
+        max-width: 600px;
+        line-height: 1.5; 
+        font-family: "Halant", sans-serif;
+        font-weight: 500;
+        color: #841233;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #nopre {
+        display: none;
+    }
+
+    #mainlogo {
+        text-align: center;
+        margin: 0 auto; 
+    }
+
+    #mainlogo img {
+        width: 100%; 
+        height: auto;
+        max-width: 200px;
+    }
+
+    header {
+        flex-direction: column; 
+        padding-bottom: 10px; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: right;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+
+    .Grid {
+        grid-template-columns: 1fr; 
+        grid-gap: 1rem; 
+        margin-left: 20px; 
+        margin-right: 20px; 
+        margin-top: 50px; 
+    }
+
+    .arts img {
+        width: 100%; 
+        height: auto; 
+        max-width: 300px; 
+    }
+
+    .title, h3 {
+        font-size: 18px; 
+        margin-bottom: 50px; 
+    }
+
+    /* TABLE SETTING */
+    table {
+        width: 85%;  
+        margin-bottom: 30%;
+        text-align: center;
+    }
+    
+    caption {
+        font-size: 14px; 
+        padding: 10px;
+        margin-right: 50px;
+        text-align: center;
+    }
+
+    th, td {
+        font-size: 12px; 
+        width: 100%;
+    }
+    
+    th {
+        background-color: #fbbfcf; 
+        color: #841233;
+        font-weight: bold;
+    }
+    
+    td {
+        border-bottom: 1px solid #C1536B; 
+    }
+
+    td:before {
+        content: attr(data-label); 
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 5px;
+        color: #C1536B;
+    }
+
+    td:nth-child(1) { padding-left: 15px; }
+    
+    footer {
+      display: none;
+    }
+}
+
+/* <====== TABLET QUERIES =======> */
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    #logo {
+        margin-top: 10px;
+        margin-right: 250px;
+        text-align: left;
+    }
+    #mainlogo {
+        text-align: center;
+        margin: 0 auto; 
+    }
+
+    #mainlogo img {
+        width: 90%; 
+        height: auto;
+        max-width: 400px;
+        max-height: 400px; 
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
+    header {
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        padding-bottom: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: right;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+        padding: 8px 15px;
+        margin-top: 15px;
+    }
+
+    #nopre {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 1.5rem; 
+        margin: 50px 30px; 
+
+    }
+    .Grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 1.5rem; 
+        justify-items: center;
+        margin: 50px 30px;
+    }
+
+    .arts img {
+        width: 100%; 
+        height: auto;
+        max-width: 250px; }
+    
+    /* TABLE SETTING */
+    table {
+        width: 85%;  
+        margin-bottom: 30%;
+        text-align: center;
+    }
+    
+    caption {
+        font-size: 14px;
+        padding: 10px;
+        margin-right: 50px;
+        text-align: center;
+    }
+
+    th, td {
+        font-size: 12px;
+        width: 100%;
+    }
+    
+    
+    th {
+        background-color: #fbbfcf; 
+        color: #841233;
+        font-weight: bold;
+    }
+    
+    td {
+        border-bottom: 1px solid #C1536B; 
+    }
+
+    td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 5px;
+        color: #C1536B;
+    }
+
+    td:nth-child(1) { padding-left: 15px; }
+    
+    footer {
+        display: none;
+    }
+}

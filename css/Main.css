@@ -1,0 +1,747 @@
+/*
+    Name: Gonzales, Samantha Wayne D.
+    Section: WD-202
+    Date: October 18, 2024
+
+    
+*/
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 180vh; 
+    background-image: linear-gradient(to bottom,
+        hsl(347deg 47% 54%) 0%,
+        hsl(347deg 53% 64%) 12%,
+        hsl(346deg 62% 74%) 22%,
+        hsl(344deg 80% 84%) 32%,
+        hsl(354deg 100% 90%) 43%,
+        hsl(15deg 100% 90%) 54%,
+        hsl(29deg 100% 92%) 68%,
+        hsl(46deg 86% 94%) 94%
+    );
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+root{
+    --text-pink: #C1536B;
+}
+
+/* HEADER AND NAVIGATIONS */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+
+}
+
+nav ul {
+    list-style: none;        
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+  
+nav ul li {
+    margin-right: 20px;       
+}
+  
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;      
+    background-color: #fbbfcf; 
+    color: #841233;          
+    text-decoration: none;  
+    font-weight: bold;       
+    font-family: "Halant", sans-serif;
+    transition: background-color 0.3s ease;  
+    font-size: 15px;
+    margin-top: 22px;
+
+}
+  
+nav ul li a:hover {
+    background-color: #841233;
+    box-shadow: 10px 4px 12px 4px #fbbfcf;
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+nav ul li a:hover{
+    color: #FDF7E4;
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+/* PREVIEW, LOGO ICON AND MAIN LOGO*/
+#logo {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#mainlogo {
+    display: flex;         
+    justify-content: center; 
+}
+
+#mainlogo img {
+    width: 540px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 75px; 
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: high-quality;
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; 
+    padding-top: 10px; 
+}
+
+.preview img {
+    display: block;          
+    margin: 0 auto;
+    display: block;
+    border: 12px solid #C1536B;
+    box-shadow: 9px 5px 29px 8px #FDF7E4;
+
+}
+
+/* TAGLINE */
+h3 {
+    font-family:'calistoga-regular',serif;
+    font-style: italic;
+    font-weight: 900;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 85px;
+    margin-bottom: 200px;
+    color: #C1536B;
+}
+
+
+/* PORTFOLIO SETTINGS */
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    padding: 1rem;
+    margin-top: 150px;
+    margin-bottom: 100px; 
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.arts img {
+    width: 380px;
+    height: 350px;
+}
+
+.title {
+    font-family: 'Calistoga', serif;
+    font-size: 23px;
+    text-align: center;
+    color: #C1536B;
+    
+}
+
+.arts h3 {
+    font-family: 'Calistoga', serif;
+    font-size: 23px;
+    text-align: center;
+    color: #FDF7E4; 
+    background-color: #841233; 
+    font-weight: bold;
+    padding: 20px 0; 
+    margin: 0;  
+}
+
+.arts a {
+    text-decoration: none;
+    color: #FDF7E4;
+
+}
+.arts h3 a:hover{
+    text-decoration: none;
+    color: #841233;
+    text-transform: var(--text-pink);
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.arts img:hover{
+    background-color: #841233;
+    box-shadow: 10px 4px 12px 4px #FDF7E4;
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.arts h3:hover {
+    background-color: #C1536B;
+    box-shadow: 10px 4px 12px 4px#FDF7E4;
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/*PORTFOLIO ART DIGITAL VIEWING PORT*/
+.Grid__line {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    justify-items: center; 
+    padding: 1rem;
+    margin-top: 150px;
+    margin-bottom: 5px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 1200px;
+}
+
+.Viewing {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+#heading {
+    display: flex;                
+    justify-content: center;        
+    align-items: center;   
+    margin-top: 35px;        
+}
+
+#heading h1 {
+    font-family: "Calistoga", serif;
+    font-style: normal;
+    font-size: 125px; 
+    text-align: center; 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #841233;
+    background: linear-gradient(to bottom, #FDF7E4 0%, #C1536B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;  
+    color: transparent;             
+    display: inline-block;          
+}
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: auto; 
+    height: auto; 
+    max-width: 100%; 
+    max-height: 100%;
+}
+
+.close {
+    position: absolute; 
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+
+.Viewing img {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 0;
+    display: block;          
+    margin: 0 auto;
+    display: block;
+    border: 12px solid #C1536B;
+    box-shadow: 5px 5px 15px 5px #841233;
+    border-radius: 10px;}
+
+.back-button:hover {
+    background-color: #C1536B; 
+    transform: translateY(-2px); 
+}
+
+/*PORTFOLIO ART TRADITIONAL VIEWING PORT*/
+.Grid__linetrad {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    justify-items: center; 
+    padding: 1rem;
+    margin-top: 150px;
+    margin-bottom: 0 auto; 
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 1200px;
+}
+
+.Viewing__Trad {
+    display: flex;
+    justify-content: center; 
+    align-items: center; }
+
+.Viewing__Trad img {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 0;
+    display: block;          
+    margin: 0 auto;
+    border: 12px solid #C1536B;
+    box-shadow: 5px 5px 15px 5px #841233;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.Viewing__Trad img:hover {
+    transform: scale(1.05); 
+}
+
+/*PORTFOLIO ART WATERCOLOR VIEWING PORT*/
+.Grid__linewater {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    justify-items: center; 
+    padding: 1rem;
+    margin-top: 150px;
+    margin-bottom: 5px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 1200px;
+}
+
+.Viewing__water {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.Viewing__water img {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 0;
+    display: block;          
+    margin: 0 auto;
+    display: block;
+    border: 12px solid #C1536B;
+    box-shadow: 5px 5px 15px 5px #841233;
+    border-radius: 10px;
+}
+
+/* Heading for Watercolor */
+#heading__water {
+    display: flex;                
+    justify-content: center;        
+    align-items: center;   
+    margin-top: 35px;        
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content1 {
+    margin: auto;
+    display: block;
+    width: auto; 
+    height: auto; 
+    max-width: 800%; 
+    max-height: 200%; 
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+
+
+
+
+/*BUTTON CONTAINER*/
+.button-container {
+    text-align: center; 
+    margin: auto 0;  
+    margin-top: 55px;
+    margin-bottom: 55px;  
+}
+    
+.back-button {
+    display: inline-block;
+    padding: 12px 25px;  
+    font-size: 18px;     
+    color: #FDF7E4;      
+    background-color: #841233; 
+    border: none;        
+    border-radius: 5px;   
+    text-decoration: none; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+/* VIDEO STYLING SETTINGS */
+#video {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#video video {
+    width: 700px;            
+    max-width: 100%;         
+    height: auto;    
+    object-fit: fill;
+    margin-bottom: 55px;
+}
+
+/* FOOTER STYLING*/
+
+footer {
+    background-color: #fbbfcf; 
+    padding: 10px 0; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 150px;
+}
+
+footer a { 
+    font-weight: bold;
+    font-family: "Halant", sans-serif;
+    font-size: 18px; 
+    color: #C1536B; 
+    margin: 0;
+}
+
+footer a:hover{
+    color: #841233;
+    box-shadow: 10px 4px 12px 4px #fbbfcf;
+    transform: translateY(-2px);     
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+
+/* HAMBURGER BAR NAV*/
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav menu (links) */
+.nav-menu {
+    align-items: center;
+    background-color: #fbbfcf;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: block; 
+    cursor: pointer;
+    margin-left: 42%; 
+    position: absolute;
+    justify-content: right;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #C1536B;
+}
+
+
+.nav-bar{
+    display:none;}
+
+    
+/* <====== MOBILE QUERIES =======> */
+@media (max-width: 600px) {
+
+    /* HAMBURGER BAR NAV*/
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* Nav menu (links) */
+    .nav-menu {
+        align-items: center;
+        background-color: #fbbfcf;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-left: 42%; 
+        position: absolute;
+        justify-content: right;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: #C1536B;
+    }
+
+
+    .nav-bar{
+        display:none;}
+
+    
+    
+    /* HAMBURGER */
+    .nav-bar {
+        min-height: 70px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+    }
+    #logom {
+        margin-top: 10px;
+        margin-left: 0; 
+        flex-grow: 1; 
+    }
+
+    .desktop-tab {
+    display: none; 
+    }
+    .desktop-tablet {
+        display: none;
+    }
+    .hamburger {
+        display: block; 
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    #nopre {
+        display: none;
+    }
+
+    #mainlogo {
+        text-align: center;
+        margin: 0 auto; 
+    }
+
+    /* MOBILE LOGO STYLING */
+    #mainlogo img {
+        width: 100%; 
+        height: auto;
+        max-width: 200px; 
+    }
+
+    
+    /* MOBILE HEADER STYLING */
+    header {
+        flex-direction: column; 
+        padding-bottom: 10px;
+    }
+
+    /* MOBILE NAVIGATION MENU */
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+
+    /* GRID MOBILE STYLING */
+    .Grid {
+        grid-template-columns: 1fr; 
+        grid-gap: 1rem; 
+        margin-left: 20px; 
+        margin-right: 20px; 
+        margin-top: 50px;
+    }
+
+    /* IMAGES MOBILE */
+    .arts img {
+        width: 100%;
+        height: auto;
+        max-width: 300px; 
+    }
+    
+    
+    /* TITLE MOBILE */
+    .title, h3 {
+        padding-bottom: 80px;
+        font-size: 18px; 
+        }
+    #nopre {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1.5rem; 
+        margin: 25px 30px; 
+
+    }
+
+    /* VIDEO MOBILE STYLING*/
+    #video {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    #video video {
+        width: 700px;            
+        max-width: 90%;         
+        height: auto;    
+        object-fit: fill;
+        margin-bottom: 55px;
+    }
+    /* FOOTER */
+    footer {
+      display: none;
+    }
+}
+
+/* <====== TABLET QUERIES =======> */
+@media (min-width: 600px) and (max-width: 1024px) {
+    
+    #logo {
+        margin-top: 10px;
+        margin-right: 250px;
+        text-align: left;
+    }
+    #mainlogo {
+        text-align: center;
+        margin: 0 auto; 
+    }
+
+    #mainlogo img {
+        width: 90%; 
+        height: auto;
+        max-width: 400px; 
+        max-height: 400px; 
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
+    /* NAVIGATION TABLET STYLING */
+    header {
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        padding-bottom: 15px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: right;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 10px; 
+        padding: 8px 15px;
+        margin-top: 15px;
+    }
+
+    #nopre {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 1.5rem; 
+        margin: 50px 30px;
+
+    }
+
+    /* GRID TABLET STYLING */
+    .Grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 1.5rem; 
+        justify-items: center;
+        margin: 50px 30px; 
+    }
+
+    .arts img {
+        width: 100%; 
+        height: auto;
+        max-width: 250px; }
+
+
+    footer {
+        display: none;
+    }
+}
